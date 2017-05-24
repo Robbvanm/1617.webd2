@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Portfolio</title>
+        <meta name="viewport" content="width=device-width">
+        <link href="../Layout.css" rel="stylesheet"/>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Khula:600" rel="stylesheet">
+   </head>
+    <body>
+        <div class="Home">
+                <header id="header">
+                    <h1>Over ons</h1>
+                    <a href="../index.html"><img src="../Afbeeldingen/RVM LOGO(good).png" id="RVM" alt="Logo bedrijf"/></a>
+                </header>
+                <nav>
+                   <ul id="navigation">
+                       <li><a href="../index.html">Home</a></li>
+                       <li><a href="../Diensten/Diensten.html">Diensten</a></li>
+                       <li><a href="../Portfolio/Portfolio.html">Portfolio</a></li>
+                       <li><a href="OverOns.html">Over ons</a></li>
+                       <li><a href="../Team/Onsteam.html">Ons team</a></li>
+                       <li><a href="../Contact/Contact.html">Contact</a><br></li>
+                   </ul>
+                </nav>
+            <div class="Home2">
+        <article id="Content">
+            <h2 class="bs">Bedrijf en leden</h2>
+            <p>RVM is een groeiend bedrijf dat zich focussed op verscheidene diensten. Deze kan u bekijken op de tab 'Diensten'.
+            Robbe houdt zich vooral bezig met sites maken terwijl Jarno de opmaak verzorgd. Kenny maakt animaties en Senne 
+            gebruikt zijn ervaringen vooral in photoshop en illustrator. Samen vormen we een goed dat goed samenwerkt.</p>
+                <h2>Locatie bedrijf</h2>
+                <p>Salvialaan 8 Liedekerke 1770</p>
+                <div id="map"></div> 
+<script >
+    function myMap() {
+        var Likert = {lat: 50.873984, lng: 4.096931};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: Likert
+        });
+        var marker = new google.maps.Marker({
+          position: Likert,
+          map: map
+        });
+      }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzxgBbpjbNYIJxLLRAIz9RnYK8PNyyIDo&callback=myMap"></script>
+        </article>
+        <!--<div id="sidebar">
+            images
+        </div>-->
+        </div>
+        </div>
+        
+        <div id="SpaceOverOns"></div>
+        <footer>
+            <p>&copy; Copyrights RVM<br>WEBDESIGN AGENCY</p>
+            
+        </footer>
+    </body>
+</html>

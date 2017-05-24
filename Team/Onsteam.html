@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Portfolio</title>
+        <meta name="viewport" content="width=device-width">
+        <link href="../Layout.css" rel="stylesheet"/>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Khula:600" rel="stylesheet">
+   </head>
+    <body>
+        <div class="Home">
+                <header id="header">
+                    <h1>Ons team</h1>
+                    <a href="../index.html"><img src="../Afbeeldingen/RVM LOGO(good).png" id="RVM" alt="Logo bedrijf"/></a>
+                </header>
+                <nav>
+                   <ul id="navigation">
+                       <li><a href="../index.html">Home</a></li>
+                       <li><a href="../Diensten/Diensten.html">Diensten</a></li>
+                       <li><a href="../Portfolio/Portfolio.html">Portfolio</a></li>
+                       <li><a href="../OverOns/OverOns.html">Over ons</a></li>
+                       <li><a href="Onsteam.html">Ons team</a></li>
+                       <li><a href="../Contact/Contact.html">Contact</a><br></li>
+                   </ul>
+                </nav>
+            <div class="Home2">
+        <article id="Content">
+            <h2 class="bs">Ons team</h2><br>
+            <div id="squad">
+                <img class = "images" src="../Afbeeldingen/Mezelf.png" alt="Robbe" style= "width:50%"/>
+                <img class = "images" src="../Afbeeldingen/kenny.jpg" alt="Kenny" style= "width:50%"/>
+                <img class = "images" src="../Afbeeldingen/senne.jpg" alt="Senne" style= "width:50%"/>
+                <img class = "images" src="../Afbeeldingen/jarno.jpg" alt="Jarno" style= "width:50%"/>
+                <button class="button-images" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="button-images" onclick="plusDivs(+1)">&#10095;</button>
+            </div>
+            <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("images");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+                <br>
+                <div class="table">
+                <table>
+                    <thead>
+                        <tr id="Namen"><th></th><th>Robbe Van Mulders</th><th>Kenny Stevens</th><th >Senne De Kock</th><th>Jarno Cobbaert</th></tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr><td class="sites">Site ontwikkeling</td><td class="robbeVanMulders">JA</td><td class="kennyStevens">NEE</td><td class="senneDeKock">JA</td><td class="jarnoCobbaert">JA</td></tr>
+                    <tr><td class="sites">Layout en design</td><td class="robbeVanMulders">JA</td><td class="kennyStevens">JA</td><td class="senneDeKock">JA</td><td class="jarnoCobbaert">NEE</td></tr>
+                    <tr><td class="sites">Animaties</td><td class="robbeVanMulders">JA</td><td class="kennyStevens">JA</td><td class="senneDeKock">NEE</td><td class="jarnoCobbaert">JA</td></tr>
+                    
+                    </tbody>
+                    <tfoot>
+                        <tr><td class="sites">Foto design</td><td class="robbeVanMulders">NEE</td><td class="kennyStevens">JA</td><td class="senneDeKock">JA</td><td class="jarnoCobbaert">JA</td></tr>
+                    </tfoot>
+                </table>
+                </div>            
+
+        </article>
+
+        </div>
+           </div>
+        <div class="mobielTeam">
+            <table>
+                <tr><th>Robbe Van Mulders</th></tr>
+            <tr><td>+ Ontwerpen van sites</td></tr>
+            <tr><td>+ Layout en design</td></tr>  
+            <tr><td>+ Animaties</td></tr>
+            <tr><td>- Foto opmaak</td></tr>
+            </table>
+        </div>
+        <div class="mobielTeam">
+            <table>
+                <tr><th>Kenny Stevens</th></tr>
+            <tr><td>- Ontwerpen van sites</td></tr>
+            <tr><td>+ Layout en design</td></tr>  
+            <tr><td>+ Animaties</td></tr>
+            <tr><td>+ Foto opmaak</td></tr>
+            </table>
+            </div>
+         <div class="mobielTeam">
+            <table>
+                <tr><th>Senne De Kock</th></tr>
+            <tr><td>+ Ontwerpen van sites</td></tr>
+            <tr><td>+ Layout en design</td></tr>  
+            <tr><td>- Animaties</td></tr>
+            <tr><td>+ Foto opmaak</td></tr>
+            </table>
+            </div>
+         <div class="mobielTeam">
+            <table>
+                <tr><th>Jarno Cobbaert</th></tr>
+            <tr><td>+ Ontwerpen van sites</td></tr>
+            <tr><td>- Layout en design</td></tr>  
+            <tr><td>+ Animaties</td></tr>
+            <tr><td>+ Foto opmaak</td></tr>
+            </table>
+            </div>
+<div id="SpaceTeam"></div>
+        <footer>
+            <p>&copy; Copyrights RVM<br>WEBDESIGN AGENCY</p>
+            
+        </footer>
+    </body>
+</html>
